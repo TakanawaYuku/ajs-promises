@@ -1,12 +1,13 @@
-import GameSavingLoader from './gameSavingLoader';
+/* eslint-disable no-console */
+import GameSavingLoader from './GameSavingLoader';
 
+// Задача Promises
 GameSavingLoader.load().then(
   (saving) => {
-    // eslint-disable-next-line no-console
     console.log(saving);
+    console.log('Задача Promises выполнена');
   },
   (error) => {
-    // eslint-disable-next-line no-console
-    console.log(error);
+    console.log('error', error.message);
   },
 );
